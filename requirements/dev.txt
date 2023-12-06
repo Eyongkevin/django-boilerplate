@@ -1,0 +1,4 @@
+-r base.txt
+ipython==8.18.1
+psycopg-binary==3.1.14
+django-extensions==3.2.3
