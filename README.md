@@ -63,6 +63,20 @@ CREATE DATABASE <db-name>;
 
 - After having created the user role, password and database, fill these values in the `.env`.
 
+### Create new repo
+
+If you clone the boilerplate, the git remote will reference this boilerplate. So, to get to reference our own repo, we can do a few things;
+
+- Create a new repo on github, don't add anything like README.
+- Update the remote of this boilerplate to reference the new repo you just created.
+
+```
+git remote set-url origin <your-repo-url>.git
+```
+
+- Set the main branch: `git branch -M main`
+- Push to origin: `git push -u origin main`
+
 ## Boilerplate Structure
 
 ### Settings
