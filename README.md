@@ -22,6 +22,7 @@ DB_PORT=5432
 ### Using sqlite3
 
 - If you want to use `sqlite3` as your database, then just the `SECRET_KEY` is required.
+- The boilerplate is configured to use postgresql by default. So, to switch to sqlite3, move to the development settings at [config/settings/dev.py](https://github.com/Eyongkevin/django-boilerplate/blob/main/config/settings/dev.py) and adjust the database for sqlite3 by uncommenting for sqlite3 and commenting for postgresql.
 
 #### Generate your SECRET_KEY
 
