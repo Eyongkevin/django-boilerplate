@@ -10,3 +10,5 @@ dev-shell-plus:
 	python3 manage.py shell_plus --settings=config.settings.dev
 dev-install:
 	pip install -r requirements/dev.txt
+dev-test:
+	python3 manage.py test --settings=config.settings.dev
