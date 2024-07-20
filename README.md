@@ -47,7 +47,7 @@ SECRET_KEY=django-insecure-TwNkN-nrAtdYMt6rFVFGQ0znc1JPlAn64bLf5EgkeYX_GBZiVJfNR
 - In addition to setting up the `SECRET_KEY` above, we need to provide the configuration for postgresql
 - Here, I am using the user `postgres` with password `postgres`. But you can always create a new role with a unique password
 
-```
+```bash
 psql -U postgres
 
 CREATE ROLE <role-name> WITH PASSWORD '<password>'
@@ -58,7 +58,7 @@ ALTER ROLE <role-name> LOGIN;
 
 #### Create database
 
-```
+```bash
 \c postgres <role-name>
 
 CREATE DATABASE <db-name>;
@@ -68,12 +68,12 @@ CREATE DATABASE <db-name>;
 
 ### Create new repo
 
-If you clone the boilerplate, the git remote will reference this boilerplate. So, to get to reference our own repo, we can do a few things;
+If you clone the boilerplate, the git remote will reference this boilerplate. So, to reference your own repo, you can do a few things;
 
 - Create a new repo on github, don't add anything like README.
 - Update the remote of this boilerplate to reference the new repo you just created.
 
-```
+```bash
 git remote set-url origin <your-repo-url>.git
 ```
 
@@ -98,8 +98,14 @@ To create a new app, we do the following;
 
 - cd to the apps/ directory and run the startapp management command
 
-```
+```bash
 python3 ../manage.py startapp <app-name>
+```
+
+Or use this Makefile command from the working directory
+
+```bash
+make dev-startapp app=<app-name>
 ```
 
 #### core app
