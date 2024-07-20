@@ -4,6 +4,9 @@ Are you tired of going through the same process whenever you want to start a new
 
 Here, I present to you this boilerplate that set up an enterprise standard Django project using latest version of Django
 
+## Note
+`make dev-install` will install `Django~=5.0`, which ensures security update for Django version 5.
+
 ## Set Up
 
 - Clone the repo `git clone https://github.com/Eyongkevin/django-boilerplate.git`
@@ -89,7 +92,7 @@ Just like settings, we have a folder `requirements/` that contains requirement f
 
 ### Apps
 
-All django applications should be created in the `app/` folder. This way, all apps are grouped and easy to find.
+All django applications should be created in the `apps/` folder. This way, all apps are grouped and easy to find.
 
 To create a new app, we do the following;
 
